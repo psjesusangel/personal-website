@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Dela Gothic One', sans-serif; /* placeholder fonts */
+    font-family: /*'Dela Gothic One'*/ 'Dhurjati', sans-serif; /* placeholder fonts */
 }
 
 .navbar {
