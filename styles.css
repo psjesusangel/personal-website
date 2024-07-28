@@ -1,11 +1,11 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif /* placeholder fonts */
+    font-family: "Dela Gothic One", sans-serif /* placeholder fonts */
 }
 
 .navbar {
-    background-color: gray; /* color tbd */
+    background-color: lightgrey; /* color tbd */
     padding: 40px 40px;
     display: flex;
     justify-content: space-between;
@@ -27,4 +27,36 @@ body {
     color: black;
     font-size: 15px;
     text-decoration: none;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 200px); /* adjust height based on navbar height */
+}
+
+.greeting-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.greeting {
+    font-family: 'Dela Gothic One', sans-serif;
+    font-size: 90px;
+    margin: 50px;
+}
+
+.intro-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+
+.intro {
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 30px;
+    margin: 5px 0;
 }
