@@ -101,7 +101,7 @@ td {
 }
 
 .info-table td img {
-    border-radius: 50%;
+    size: 20px 20px;
 }
 
 .skills-table td {
