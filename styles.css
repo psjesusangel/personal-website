@@ -18,6 +18,11 @@ body {
     text-decoration: none;
 }
 
+.navbar .logo a:hover {
+    background-color: black;
+    color: white;
+}
+
 .navbar .nav-links {
     display: flex;
     gap: 40px;
@@ -27,6 +32,11 @@ body {
     color: black;
     font-size: 15px;
     text-decoration: none;
+}
+
+.navbar .nav-links a:hover {
+    background-color: black;
+    color: white;
 }
 
 /* Styles for index.html */
@@ -64,13 +74,13 @@ body {
 
 /* Styles for about.html */
 .about-main-content {
-    padding: 40px 10%; /* Add percentage padding for left and right */
+    padding: 40px 10%; /* add percentage padding for left and right */
 }
 
 .about-title {
     font-family: 'Dela Gothic One', sans-serif;
     font-size: 30px;
-    margin: 30px 0;
+    margin: 20px 0;
 }
 
 table {
@@ -80,12 +90,12 @@ table {
 }
 
 .info-table {
-    margin-bottom: 60px;
+    margin-bottom: 50px;
 }
 
 th, td {
     border: 1px solid #000;
-    padding: 5px 10px; /* Maintain padding to make the table more compact */
+    padding: 5px 10px; /* maintain padding to make the table more compact */
     text-align: left;
 }
 
@@ -121,4 +131,29 @@ a {
 
 .social-icon:last-child {
     margin-right: 0; /* remove right margin for the last icon */
+}
+
+.button-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.custom-button {
+    display: inline-block;
+    padding: 1px 10px;
+    font-family: 'Dhurjati', sans-serif;
+    font-size: 16px;
+    color: black; /* color tbd */
+    background-color: lightgray; /* color tbd */
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.custom-button:hover {
+    background-color: grey; /* color tbd */
 }
