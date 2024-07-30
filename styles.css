@@ -2,79 +2,105 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif; /* placeholder fonts */
+    background-color: whitesmoke;
+}
+
+.index-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.header {
+    text-align: center;
+    font-size: 50px;
+    background-color: lightcoral; /* Ensure the background is white */
+    position: relative;
+    font-family: 'Helvetica Neue';
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 200;
+    height: 110px;
+    margin-top: 32px;
 }
 
 .navbar {
-    background-color: lightgrey; /* color tbd */
-    padding: 40px 40px;
+    position: absolute;
+    top: 0;
+    right: 10px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 10px;
+    background: none; /* Remove background color */
 }
 
-.navbar .logo a {
-    color: black;
-    font-size: 30px;
-    text-decoration: none;
-}
-
-.navbar .logo a:hover {
-    background-color: black;
-    color: white;
-}
-
-.navbar .nav-links {
+.nav-links {
     display: flex;
-    gap: 40px;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
 }
 
-.navbar .nav-links a {
+.nav-links a {
     color: black;
     font-style: italic;
     font-size: 15px;
     text-decoration: none;
 }
 
-.navbar .nav-links a:hover {
+.nav-links a:hover {
     background-color: black;
     color: white;
+    padding: 5px; /* Add some padding to make the hover effect noticeable */
 }
+
 
 /* Styles for index.html */
 .index-main-content {
     display: flex;
-    justify-content: center;
     align-items: center;
     height: calc(100vh - 200px); /* adjust height based on navbar height */
 }
 
 .index-greeting-container {
-    display: flex;
+    display: inline-flex;
     align-items: center;
-    gap: 40px;
+    gap: 0px;
 }
 
 .index-greeting {
     font-family: Arial, sans-serif;
-    font-size: 90px;
-    margin: 50px;
+    font-size: 70px;
+    font-weight: 700;
+    flex-direction: column;
+    align-items: flex-start;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    text-align: center;
+    padding: 60px;
 }
 
 .index-intro-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: left;
 }
 
 .index-intro {
-    font-family: 'Arial', sans-serif;
-    font-size: 30px;
+    font-family: 'Helvetica Neue';
+    font-size: 20px;
     margin: 5px 0;
+    text-transform: lowercase;
+    font-weight: 200;
+    text-align: center;
 }
 
 /* Styles for about.html */
 .about-main-content {
+    margin-top: 30px;
     padding: 20px 10%; /* add percentage padding for left and right */
 }
 
