@@ -15,26 +15,36 @@ body {
 
 .header {
     text-align: center;
-    font-size: 50px;
-    background-color: lightcoral; /* Ensure the background is white */
+    margin-top: 30px;
+    padding-top: 32px;
+    background-color: lightcoral;
     position: relative;
     font-family: 'Helvetica Neue';
-    font-size: 20px;
+    font-size: 80px;
     font-style: italic;
     font-weight: 200;
-    height: 110px;
-    margin-top: 32px;
+    height: 50px;
+    z-index: 0; 
+    margin-bottom: 80px;
+}
+
+.header-text {
+    position: relative;
+    top: -8px; /* Adjust this value to move the text up */
+    z-index: 2; /* Ensure text is above the background */
+    display: inline-block; /* To ensure text moves independently */
 }
 
 .navbar {
-    position: absolute;
+    position: fixed; /* Changed from absolute to fixed */
     top: 0;
-    right: 10px;
+    right: 0;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     padding: 10px;
     background: none; /* Remove background color */
+    z-index: 3; /* Ensure navbar is above the header */
 }
 
 .nav-links {
@@ -57,8 +67,6 @@ body {
     padding: 5px; /* Add some padding to make the hover effect noticeable */
 }
 
-
-/* Styles for index.html */
 .index-main-content {
     display: flex;
     align-items: center;
@@ -95,33 +103,24 @@ body {
     margin: 5px 0;
     text-transform: lowercase;
     font-weight: 200;
-    text-align: center;
+    text-align: left;
 }
 
-/* Styles for about.html */
-.about-main-content {
-    margin-top: 30px;
-    padding: 20px 10%; /* add percentage padding for left and right */
+/* General styling for logo grids */
+.logo-grid, .frameworks-logo-grid, .tools-logo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Ensure 3 elements per row */
+    gap: 10px; /* Adjust gap between logos as needed */
+    justify-items: center;
+    align-items: center;
 }
 
-.about-title {
-    font-family: Arial, sans-serif;
-    font-size: 25px;
-    margin: 10px 0;
+.logo-grid img, .tools-logo-grid img {
+    width: 30px;
 }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 50px;
-}
-
-.info-table {
-    margin-bottom: 75px;
-}
-
-.location {
-    font-size: 20px;
+.frameworks-logo-grid img {
+    width: 35px;
 }
 
 /* Remove list styling and add breaks between each item */
@@ -133,6 +132,12 @@ table {
 
 .skills-table li {
     margin-bottom: 10px; /* Add space between items */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 50px;
 }
 
 th, td {
@@ -211,44 +216,4 @@ a {
 
 .custom-button:hover {
     background-color: rgb(151, 150, 150); /* color tbd */
-}
-
-/* General styling for logo grids */
-.logo-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Ensure 3 elements per row */
-    gap: 10px; /* Adjust gap between logos as needed */
-    justify-items: center;
-    align-items: center;
-}
-
-.logo-grid img {
-    width: 30px; 
-    margin: 5px; 
-}
-
-/* Specific styling for frameworks logos */
-.frameworks-logo-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Ensure 3 elements per row */
-    gap: 10px;
-    justify-items: center;
-    align-items: center;
-}
-
-.frameworks-logo-grid img {
-    width: 35px; 
-}
-
-/* Specific styling for tools and technologies logos */
-.tools-logo-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Ensure 3 elements per row */
-    gap: 10px;
-    justify-items: center;
-    align-items: center;
-}
-
-.tools-logo-grid img {
-    width: 30px; 
 }
