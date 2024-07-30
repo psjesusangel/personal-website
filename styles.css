@@ -75,50 +75,76 @@ body {
 
 /* Styles for about.html */
 .about-main-content {
-    padding: 40px 10%; /* add percentage padding for left and right */
+    padding: 20px 10%; /* add percentage padding for left and right */
 }
 
 .about-title {
     font-family: Arial, sans-serif;
-    font-size: 30px;
-    margin: 20px 0;
+    font-size: 25px;
+    margin: 10px 0;
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-bottom: 46px;
+    margin-bottom: 50px;
 }
 
 .info-table {
-    margin-bottom: 50px;
+    margin-bottom: 75px;
+}
+
+.location {
+    font-size: 20px;
+}
+
+/* Remove list styling and add breaks between each item */
+.skills-table ul {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+}
+
+.skills-table li {
+    margin-bottom: 10px; /* Add space between items */
 }
 
 th, td {
     border: 1px solid #000000;
-    padding: 5px 10px; /* maintain padding to make the table more compact */
+    padding: 3px 10px; /* maintain padding to make the table more compact */
     text-align: left;
+    white-space: nowrap;
 }
 
 th {
     font-family: 'Arial', sans-serif;
-    font-size: 14px;
+    font-size: 15px;
     text-transform: uppercase;
     font-style: italic;
+    font-weight: 400;
     background-color: #f0f0f0;
 }
 
 td {
-    font-family: 'Arial';
-    font-size: 12px;
+    font-family: 'Helvetica Neue';
+    padding-top: 5px;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 13px;
+}
+
+td img {
+    margin-right: 10px;
+    vertical-align: middle; 
+}
+
+td a {
+    display: inline-block;
+    margin-right: 1px; 
 }
 
 .info-table td img {
     size: 20px 20px;
-}
-
-.skills-table td {
-    font-size: 14px;
 }
 
 a {
@@ -149,7 +175,7 @@ a {
     font-family: 'Arial', sans-serif;
     font-size: 16px;
     color: black; /* color tbd */
-    background-color: lightgray; /* color tbd */
+    background-color: rgb(224, 221, 221); /* color tbd */
     border: none;
     border-radius: 5px;
     text-align: center;
@@ -158,5 +184,45 @@ a {
 }
 
 .custom-button:hover {
-    background-color: grey; /* color tbd */
+    background-color: rgb(151, 150, 150); /* color tbd */
+}
+
+/* General styling for logo grids */
+.logo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Ensure 3 elements per row */
+    gap: 10px; /* Adjust gap between logos as needed */
+    justify-items: center;
+    align-items: center;
+}
+
+.logo-grid img {
+    width: 30px; 
+    margin: 5px; 
+}
+
+/* Specific styling for frameworks logos */
+.frameworks-logo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Ensure 3 elements per row */
+    gap: 10px;
+    justify-items: center;
+    align-items: center;
+}
+
+.frameworks-logo-grid img {
+    width: 35px; 
+}
+
+/* Specific styling for tools and technologies logos */
+.tools-logo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Ensure 3 elements per row */
+    gap: 10px;
+    justify-items: center;
+    align-items: center;
+}
+
+.tools-logo-grid img {
+    width: 30px; 
 }
