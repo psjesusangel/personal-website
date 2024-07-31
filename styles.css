@@ -20,7 +20,7 @@ body {
     background-color: lightcoral;
     position: relative;
     font-family: 'Helvetica Neue';
-    font-size: 80px;
+    font-size: 60px;
     font-style: italic;
     font-weight: 200;
     height: 50px;
@@ -30,9 +30,10 @@ body {
 
 .header-text {
     position: relative;
-    top: -8px; /* Adjust this value to move the text up */
+    top: 6px; /* Adjust this value to move the text up */
     z-index: 2; /* Ensure text is above the background */
     display: inline-block; /* To ensure text moves independently */
+    opacity: .3;
 }
 
 .navbar {
@@ -106,32 +107,18 @@ body {
     text-align: left;
 }
 
-/* General styling for logo grids */
-.logo-grid, .frameworks-logo-grid, .tools-logo-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Ensure 3 elements per row */
-    gap: 10px; /* Adjust gap between logos as needed */
-    justify-items: center;
-    align-items: center;
+.about-main-content {
+    margin-top: 30px;
+    padding: 20px 10%; /* add percentage padding for left and right */
+    max-width: 1200px; /* Optional: Limit the max width for better readability */
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.logo-grid img, .tools-logo-grid img {
-    width: 30px;
-}
-
-.frameworks-logo-grid img {
-    width: 35px;
-}
-
-/* Remove list styling and add breaks between each item */
-.skills-table ul {
-    list-style-type: none; /* Remove bullets */
-    padding: 0; /* Remove padding */
-    margin: 0; /* Remove margin */
-}
-
-.skills-table li {
-    margin-bottom: 10px; /* Add space between items */
+.about-title {
+    font-family: Arial, sans-serif;
+    font-size: 25px;
+    margin: 10px 0;
 }
 
 table {
@@ -174,10 +161,9 @@ td a {
     margin-right: 1px; 
 }
 
-.info-table td img {
-    size: 20px 20px;
+.location {
+    font-size: 22px;
 }
-
 a {
     text-decoration: none; /* remove underline from links */
 }
@@ -216,4 +202,32 @@ a {
 
 .custom-button:hover {
     background-color: rgb(151, 150, 150); /* color tbd */
+}
+
+/* General styling for logo grids */
+.logo-grid, .frameworks-logo-grid, .tools-logo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Ensure 3 elements per row */
+    gap: 10px; /* Adjust gap between logos as needed */
+    justify-items: center;
+    align-items: center;
+}
+
+.logo-grid img, .tools-logo-grid img {
+    width: 30px;
+}
+
+.frameworks-logo-grid img {
+    width: 35px;
+}
+
+/* Remove list styling and add breaks between each item */
+.skills-table ul {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+}
+
+.skills-table li {
+    margin-bottom: 10px; /* Add space between items */
 }
